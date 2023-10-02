@@ -1,0 +1,33 @@
+.qrcodes{
+    position:fixed;
+    z-index: 13;
+    /* border: 1px solid #000; */
+    width: 7%;
+    right: 0.5%;
+    top: 55%;
+
+}
+.qrcodesM{
+    display: none;
+}
+@media screen and (max-width:991px) {
+    .qrcodes{
+        display: none;
+    }
+    .qrcodesM{
+        display: block;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 10;
+    }
+    .qrcodesM img{
+        width: 100%;
+    }
+    .footer{
+        padding-bottom: 18vw;
+    }
+    .right__box{
+        bottom: 20vw;
+    }
+}
